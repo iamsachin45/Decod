@@ -4,7 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/splash"
     tools:context=".Signup">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Welcome To Decode"
+        android:fontFamily="@font/amiko_semibold"
+        android:textColor="#96CCF8"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157"></TextView>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="35dp"
+        android:padding="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailid"
@@ -49,6 +77,19 @@
             android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:id="@+id/button_enter"
+        android:background="@drawable/custom_button"
+        android:text="Enter here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.415"></Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

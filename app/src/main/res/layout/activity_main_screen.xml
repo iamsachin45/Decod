@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/circular_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Hi Sachin"
+            android:textColor="#403636"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="#5BBBE6FA"
+        app:strokeColor="@color/black">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/quiz" />
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/black"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:fontFamily="sans-serif"
+            android:text="Start Quiz" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/materialCardView"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        android:layout_height="150dp"
+
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
